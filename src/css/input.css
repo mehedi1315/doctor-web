@@ -60,4 +60,61 @@
  .row {
   @apply flex flex-wrap -mx-4
  }
+
+ .text-size-15 {
+  font-size: 15px;
+ }
+
+ .min-w-240 {
+  min-width: 240px;
+ }
+
+ /* mobile menu button start*/
+ .component-navicon {
+  position:relative;
+  display:block;
+  height: 40px;
+  width: 40px;
+}
+.component-navicon span {
+  position:absolute;
+  display:block;
+  height:10%;
+  right:0%;
+  transition:all .5s;
+  width:80%;
+}
+.component-navicon span:first-child {
+  top:22%;
+}
+.component-navicon span:nth-child(2) {
+  top:45%;
+}
+.component-navicon span:nth-child(3) {
+  top:68%;
+}
+.component-navicon.closed span:first-child {
+  width:45%
+}
+.component-navicon.closed span:nth-child(3) {
+  width:62%;
+}
+.component-navicon.closed:hover span:first-child,
+.component-navicon.closed:hover span:nth-child(3) {
+  width:80%;
+}
+.component-navicon.open span:first-child {
+  top:46%;
+  transform:translateY(0) rotate(45deg);
+  width:80%
+}
+.component-navicon.open span:nth-child(2) {
+  width:0
+}
+.component-navicon.open span:nth-child(3) {
+  top:46%;
+  transform:translateY(0) rotate(-45deg);
+  width:80%
+}
+/* mobile menu button end*/
 }
