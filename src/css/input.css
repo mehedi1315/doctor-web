@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
 
 @layer base {
   @font-face {
@@ -52,6 +52,12 @@
   font-family: "Ubuntu";
   font-weight: 300;
   src: url("../fonts/Ubuntu/Ubuntu-Light.ttf");
+  font-style: normal;
+}
+@font-face {
+  font-family: "Days One";
+  font-weight: 400;
+  src: url("../fonts/Days_One/DaysOne-Regular.ttf");
   font-style: normal;
 }
 }
