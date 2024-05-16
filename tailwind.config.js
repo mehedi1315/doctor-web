@@ -8,6 +8,7 @@ module.exports = {
         lato: ["Lato", 'sans-serif'],
         roboto:["Roboto",'sans-serif'],
         archivo: ['Archivo', 'sans-serif'],
+        'days-one': ['Days One', 'sans-serif'],
       },
 
       colors: {

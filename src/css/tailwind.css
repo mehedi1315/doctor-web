@@ -499,6 +499,16 @@ video {
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Days One";
+
+  font-weight: 400;
+
+  src: url("../fonts/Days_One/DaysOne-Regular.ttf");
+
+  font-style: normal;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -980,10 +990,6 @@ video {
 
 .text-center {
   text-align: center;
-}
-
-.font-roboto {
-  font-family: Roboto, sans-serif;
 }
 
 .font-archivo {
