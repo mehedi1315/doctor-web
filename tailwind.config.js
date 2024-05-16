@@ -30,6 +30,8 @@ module.exports = {
           gray30: '#4B4F58',
           gray30: '#3a3a3a',
           black: '#000000',
+          'border-primary': '#ECEEF3',
+          'border-secondary': '#D1D6E0',
           border: '#332E66',
           text01: '#A9B7D1',
           text02: '#8A879F',
