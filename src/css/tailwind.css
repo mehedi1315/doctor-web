@@ -1024,6 +1024,54 @@ video {
   transition-duration: 700ms;
 }
 
+/* Hexagon styling */
+
+.hexagon {
+  width: 480px;
+  height: 550px;
+}
+
+.hexagon-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  -webkit-clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+          clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+}
+
+.hexagon-img2{
+  width:180px;
+  height:260px;
+  position: absolute;
+  top:30%;
+  left:90%;
+  -webkit-clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+          clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+}
+
+@media (min-width:320px){
+  .hexagon {
+    width: 220px;
+    height: 320px;
+  }
+}
+
+@media (min-width:480px){
+  .hexagon {
+    width: 340px;
+    height: 420px;
+  }
+}
+
+@media (min-width:680px){
+  .hexagon {
+    width: 400px;
+    height: 500px;
+  }
+}
+
 .hover\:bg-doctor-border:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(51 46 102 / var(--tw-bg-opacity));
@@ -1059,6 +1107,10 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:block {
+    display: block;
+  }
+
   .sm\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -1107,3 +1159,5 @@ video {
     line-height: 1;
   }
 }
+
+
