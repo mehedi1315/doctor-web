@@ -1,12 +1,3 @@
-// =======================head-1 section==========================
-const min = document.querySelector(".cross")
-const area = document.querySelector(".place")
-
-min.addEventListener("click", function(){
-    area.classList.add("hidden")
-})
-
-
 // =====================Menu Sec===================
 const btn = document.querySelector(".menu-toggle")
 const menu = document.querySelector(".mobile-menu")
@@ -24,46 +15,46 @@ btn.addEventListener("click", function(){
     }
 })
 
-//============= counters==============
-let displayValues = document.querySelectorAll('.num')
-let interval = 800
+// ===================Mobile Menu Accordion============
+class Accordion {
+    constructor(options){
+        this.options = {}
+        this.options.accordionGroup = options.accordionGroup ? options.accordionGroup : '.accordions';
+        this.options.accordion = options.accordion ? options.accordion : '.accordion';
+        this.options.section = options.section ? options.section : '.section';
+        this.options.hiddenClass = options.hiddenClass ? options.hiddenClass : 'hidden';
 
-displayValues.forEach((displayValue)=>{
-    let startValue=0
-    let endValue = parseInt(displayValue.getAttribute("data-val"))
-    let duration = Math.floor(interval / endValue)
-    let counter =setInterval(function(){
-        startValue += 1
-        displayValue.textContent = startValue + "+"
-        if( startValue == endValue){
-            clearInterval(counter)
+        this.initialization();
+    }
+
+    initialization() {
+        let $this = this;
+        let accordions = document.querySelectorAll(this.options.accordionGroup);
+        for(let i=0; i<accordions.length;i++){
+            let accordion = accordions[i].querySelectorAll(this.options.accordion);
+            for(let x=0; x<accordion.length; x++){
+                let section = accordion[x].querySelector(this.options.section);
+                section.addEventListener('click', function(event){
+                    let content = accordion[x].querySelector('.content');
+                    if(content.classList.contains($this.options.hiddenClass)) {
+                        $this.closeAllSections(accordions);
+                        content.classList.remove($this.options.hiddenClass);
+                    } else {
+                        content.classList.add($this.options.hiddenClass);
+                    }
+                });
+            }
         }
-    }, duration)
-})
+    }
 
-
-// ==================same heading height in card==============
-// window.onload = function () {
-//     var headings = document.querySelectorAll('div a div div h3');
-//     var maxHeight = 0;
-
-//     headings.forEach(function (heading) {
-//         maxHeight = Math.max(maxHeight, heading.offsetHeight);
-//     });
-
-//     headings.forEach(function (heading) {
-//         heading.style.height = maxHeight + 'px';
-//     });
-// };
-
-// ============================hide Job Hiring=================
-
-window.onload = function() {
-    window.addEventListener('scroll', function() {
-        const job = document.querySelector('#job');
-    
-        if(window.scrollY > 600) {
-            job.classList.add('hidden');
+    closeAllSections(accordions) {
+        for (let i = 0; i < accordions.length; i++) {
+            let accordion = accordions[i].querySelectorAll(this.options.accordion);
+            for (let x = 0; x < accordion.length; x++) {
+                let content = accordion[x].querySelector('.content');
+                content.classList.add(this.options.hiddenClass);
+            }
         }
-    })
+    }
 }
+let a = new Accordion({});
