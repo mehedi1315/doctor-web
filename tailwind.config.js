@@ -25,6 +25,7 @@ module.exports = {
           text: '#A9B7D1'
         },
       },
+      
     },
   },
   plugins: [],
