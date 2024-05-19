@@ -36,6 +36,11 @@ module.exports = {
           text01: '#A9B7D1',
           text02: '#8A879F',
           text03: '#B7B6C4',
+          placeholder: '#27225D',
+          youtube: '#FF0000',
+          facebook: '#4267B2',
+          skype: '#00A6E4',
+          x: '#000000',
         },
       },
       
