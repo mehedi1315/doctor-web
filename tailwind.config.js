@@ -38,6 +38,7 @@ module.exports = {
           text03: '#B7B6C4',
         },
       },
+      
     },
   },
   plugins: [],
