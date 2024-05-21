@@ -1181,6 +1181,16 @@ video {
   border-bottom-right-radius: 0.25rem;
 }
 
+.rounded-t-md {
+  border-top-left-radius: 0.375rem;
+  border-top-right-radius: 0.375rem;
+}
+
+.rounded-b-md {
+  border-bottom-right-radius: 0.375rem;
+  border-bottom-left-radius: 0.375rem;
+}
+
 .border {
   border-width: 1px;
 }
@@ -1251,6 +1261,11 @@ video {
 .bg-green-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(220 252 231 / var(--tw-bg-opacity));
+}
+
+.bg-gray-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
 .bg-doctor-placeholder {
@@ -1390,6 +1405,8 @@ video {
 
 .pl-3 {
   padding-left: 0.75rem;
+.pl-3 {
+  padding-left: 0.75rem;
 }
 
 .pt-8 {
@@ -1468,6 +1485,10 @@ video {
   font-weight: 500;
 }
 
+.font-light {
+  font-weight: 300;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -1526,9 +1547,9 @@ video {
   color: rgb(16 208 161 / var(--tw-text-opacity));
 }
 
-.text-doctor-text01 {
+.text-gray-500 {
   --tw-text-opacity: 1;
-  color: rgb(169 183 209 / var(--tw-text-opacity));
+  color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -1760,6 +1781,11 @@ video {
 .hover\:bg-doctor-skype:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(0 166 228 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-doctor-primary:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(23 17 81 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-opacity-80:hover {
