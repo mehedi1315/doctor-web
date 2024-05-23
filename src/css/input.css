@@ -200,6 +200,23 @@
   -webkit-box-orient: vertical;  
   overflow: hidden;
   }
+
+  .background-banner {
+    background-image: linear-gradient(rgba(23, 17, 81, 0.7), rgba(23, 17, 81, 0.7)), url('../image/breadcrumb-01.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .text-42 {
+    font-size: 42px;
+    line-height: 1;
+  }
+
+  .text-55 {
+    font-size: 55px;
+    line-height: 1;
+  }
 }
 
 /* Hexagon styling */
