@@ -42,6 +42,7 @@ module.exports = {
           facebook: '#4267B2',
           skype: '#00A6E4',
           x: '#000000',
+          pinterest: '#E40028',
         },
       },
       
