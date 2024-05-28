@@ -128,6 +128,10 @@
   min-width: 240px;
  }
 
+ .max-w-256 {
+  max-width: 256px;
+ }
+
  .max-h-685 {
   max-height: 685px;
  }
