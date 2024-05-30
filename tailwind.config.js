@@ -44,6 +44,7 @@ module.exports = {
           skype: '#00A6E4',
           x: '#000000',
           pinterest: '#E40028',
+          linkedin: '#0072AC',
         },
       },
       
