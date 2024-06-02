@@ -128,6 +128,10 @@
   min-width: 240px;
  }
 
+ .max-w-290 {
+  max-width: 290px;
+ }
+
  .max-w-256 {
   max-width: 256px;
  }
@@ -224,6 +228,19 @@
   .text-55 {
     font-size: 55px;
     line-height: 1;
+  }
+
+  .google-map {
+    padding-bottom: 50%;
+    position: relative;
+  }
+
+  .google-map iframe {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
   }
 }
 
